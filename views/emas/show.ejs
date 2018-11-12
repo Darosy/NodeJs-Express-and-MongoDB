@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emas Detail</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/emas">Vendor Emas List</a></h3>
+      <h1>Emas Detail</h1>
+      <table>
+        <tbody>
+          <tr>
+            <td>Name Vendor</td>
+            <td>:</td>
+            <td><%= emas.vendor %></td>
+          </tr>
+          <tr>
+            <td>Tanggal Berlaku</td>
+            <td>:</td>
+            <td><%= emas.tgl_berlaku %></td>
+          </tr>
+          <tr>
+            <td>Jenis Harga</td>
+            <td>:</td>
+            <td><%= emas.jenis_harga %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

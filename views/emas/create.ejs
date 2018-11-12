@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Vendor Emas</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/emas">Employee List</a></h3>
+      <h1>Create New Employee</h1>
+      <form action="/emas/save" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Vendor</td>
+              <td><input type="text" name="vendor" required="true" /></td>
+            </tr>
+            <tr>
+              <td>Tanggal Berlaku</td>
+              <td><input type="date" name="tgl_berlaku" required="true" /></td>
+            </tr>
+            <tr>
+              <td>Jenis Harga</td>
+              <td><input type="text" name="jenis_harga" required="true" /></td>
+            </tr>
+            <tr>
+              <td>Jenis Mulia</td>
+              <td><input type="number" name="jenis_mulia" required="true" /></td>
+            </tr>
+            <tr>
+              <td>Harga</td>
+              <td><input type="number" name="harga" required="true" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" value="Save" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="reset" value="Reset" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

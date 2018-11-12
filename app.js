@@ -22,6 +22,7 @@ let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 var employees = require('./routes/employees');
+var emas = require('./routes/emas')
 
 function ignoreFavicon(req, res, next) {
   if (req.originalUrl === '/favicon.ico') {
@@ -46,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/employees', employees);
+app.use('/emas', emas);
 app.use(ignoreFavicon);
 
 // catch 404 and forward to error handler

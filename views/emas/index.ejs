@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vendor Emas List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/emas/create">Create Vendor</a></h3>
+      <h1>Emas List</h1>
+      <% if(emas.length>0) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Vendor</th>
+            <th>Tanggal Berlaku</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <% for(var i=0; i<emas.length;i++) { %>
+            <tr>
+              <td><a><%= emas[i].vendor%></a></td>
+              <td><%= emas[i].tgl_berlaku%></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% } else { %>
+        <div>No Vendor Emas found.</div>
+      <% } %>
+    </div>
+  </body>
+</html>
