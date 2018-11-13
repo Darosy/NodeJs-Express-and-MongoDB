@@ -26,7 +26,7 @@ emasController.show = function(req, res) {
 };
 
 emasController.create = function(req, res) {
-    res.render("../views/emas/create");
+    res.render("../views/emas/latihan");
 };
 
 emasController.save = function(req, res) {

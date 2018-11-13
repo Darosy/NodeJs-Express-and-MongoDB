@@ -6,8 +6,8 @@
   </head>
   <body>
     <div class="container">
-      <h3><a href="/emas">Employee List</a></h3>
-      <h1>Create New Employee</h1>
+      <h3><a href="/emas">Vendor Emas List</a></h3>
+      <h1>Create New Vendor</h1>
       <form action="/emas/save" method="post">
         <table>
           <tbody>
@@ -21,7 +21,18 @@
             </tr>
             <tr>
               <td>Jenis Harga</td>
-              <td><input type="text" name="jenis_harga" required="true" /></td>
+            </tr>
+            <tr>
+              <td>Jual</td>
+              <td style="text-align:left">
+                <input type="radio" name="jenis_harga" value="J" >
+              </td>
+            </tr>
+            <tr>
+              <td>Beli</td>
+              <td style="text-align:left">
+                <input type="radio" name="jenis_harga" value="B" >
+              </td>
             </tr>
             <tr>
               <td>Jenis Mulia</td>
@@ -31,13 +42,16 @@
               <td>Harga</td>
               <td><input type="number" name="harga" required="true" /></td>
             </tr>
-            <tr>
-              <td colspan="2"><input type="submit" value="Save" /></td>
-            </tr>
-            <tr>
-              <td colspan="2"><input type="reset" value="Reset" /></td>
-            </tr>
+            
           </tbody>
+        </table>
+        <table> Jenis Mulia
+          <tr>
+            <td colspan="2"><input type="submit" value="Save" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="reset" value="Reset" /></td>
+          </tr>
         </table>
       </form>
     </div>
